@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	makefile	/^CC=gcc$/;"	m
+CCFLAG	makefile	/^CCFLAG= -g$/;"	m
+CreateNN	nn.c	/^nn* CreateNN(int cntLayers, int* cntCellPerLayer)$/;"	f
+DEBUG	nn.c	7;"	d	file:
+DEBUGV	nn.c	8;"	d	file:
+DumpNN	nn.c	/^int DumpNN(nn* net)$/;"	f
+EXE	makefile	/^EXE=nn$/;"	m
+Example	file.c	/^int Example()$/;"	f
+GEN	makefile	/^GEN=gen$/;"	m
+GOB	makefile	/^GOB=${GRC:.c=.o}$/;"	m
+GRC	makefile	/^GRC=gen.c$/;"	m
+Gen	gen.c	/^int Gen(int cntSample)$/;"	f
+INC	makefile	/^INC=$/;"	m
+KillNN	nn.c	/^void KillNN(nn* net)$/;"	f
+LD	makefile	/^LD=gcc$/;"	m
+LDFLAG	makefile	/^LDFLAG= -lm -g$/;"	m
+LIB	makefile	/^LIB=$/;"	m
+OBJ	makefile	/^OBJ=${SRC:.c=.o}$/;"	m
+PRECISION	nn.h	1;"	d
+ReadConf	file.c	/^int ReadConf(const char* fileName, int* layers, int** cellsPerLayer)$/;"	f
+ReadSample	file.c	/^int ReadSample(const char* fileName, int* count, int* widInput, int* widOutput, double*** input, double*** stdOutput)$/;"	f
+RunNN	nn.c	/^int RunNN(nn* net, double* input, double* output, double x)$/;"	f
+SRC	makefile	/^SRC=nn.c main.c file.c$/;"	m
+TrainNN	nn.c	/^int TrainNN(nn* net, double** input, double** stdOutput, int cntSample, double yita, double x)$/;"	f
+_Active	nn.c	/^double _Active(double x, double input)$/;"	f
+_CELL_	nn.h	/^typedef struct _CELL_$/;"	s
+_LAYER_	nn.h	/^typedef struct _LAYER_$/;"	s
+_MSE	nn.c	/^double _MSE(double* stdData, double* data, int count)$/;"	f
+_NN_	nn.h	/^typedef struct _NN_$/;"	s
+cell	nn.h	/^}cell;$/;"	t	typeref:struct:_CELL_
+cells	nn.h	/^	cell*	cells;$/;"	m	struct:_LAYER_
+cntCells	nn.h	/^	int		cntCells;$/;"	m	struct:_LAYER_
+cntInput	nn.h	/^	int		cntInput;$/;"	m	struct:_CELL_
+cntLayers	nn.h	/^	int		cntLayers;$/;"	m	struct:_NN_
+cntOutput	nn.h	/^	int		cntOutput;$/;"	m	struct:_NN_
+fomular	gen.c	/^double fomular(double in)$/;"	f
+gj	nn.h	/^	double 	gj;				\/\/ e for error$/;"	m	struct:_CELL_
+input	nn.h	/^	double* input;$/;"	m	struct:_CELL_
+layer	nn.h	/^}layer;$/;"	t	typeref:struct:_LAYER_
+layers	nn.h	/^	layer*	layers;$/;"	m	struct:_NN_
+main	gen.c	/^int main(int argc, char** argv)$/;"	f
+main	main.c	/^int main(int argc, char** argv) $/;"	f
+nn	nn.h	/^}nn;$/;"	t	typeref:struct:_NN_
+outLayer	nn.h	/^	layer*	outLayer;$/;"	m	struct:_NN_
+output	nn.h	/^	double	output;$/;"	m	struct:_CELL_
+threshold	nn.h	/^	double	threshold;$/;"	m	struct:_CELL_
+weight	nn.h	/^	double*	weight;$/;"	m	struct:_CELL_
